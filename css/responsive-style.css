@@ -17,7 +17,7 @@
     .header-scrolled{
         height:auto;
     }
-    .header_wrapper .emnu-navbar-nav{
+    .header_wrapper .menu-navbar-nav{
     text-align: center;
     background-color: var(--bg-dark-blue);
     padding-bottom:15px;
@@ -27,15 +27,20 @@
     }
 
     /* banner wrapper */
-.banner-wrapper{
+    .banner-wrapper{
     padding:200px 0;
-}
+    }
 
     /* About */
-
+    .about_wrapper ul.nav-pills{
+        width: 61%;
+        margin: auto;
+    }
 
     /* portfolio */
-
+    .portfolio_wrapper .card{
+        min-height: 400px;
+    }
 
 }
 
@@ -56,8 +61,16 @@
 
 
     /* About */
-
-
+    .about_wrapper ul.nav-pills{
+        width:61%;
+        margin: auto;
+        border: 0;
+    }
+    .about_wrapper ul li .nav-link{
+        font-size: 13px;
+    }
     /* portfolio */
-
+    .portfolio_wrapper .card{
+        min-height: 500px;
+    }
 }

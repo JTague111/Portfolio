@@ -146,15 +146,15 @@ button{
 }
 
 /* 2 Navbar */
-.header_wrapper .navbar-brand img {
-    height: 70px;
-    width: 70px;
-}
 .header_wrapper .navbar{
     padding:15px 0;
     -webkit-transition:all .2s linear;
     -o-transition:all .2s linear;
     transition:all .2s linear;
+}
+.header_wrapper .navbar-brand img {
+    height: 70px;
+    width: 70px;
 }
 .header_wrapper .navbar-toggler{
     border:0;
@@ -201,8 +201,8 @@ button{
     -webkit-box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
     box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
 }
-.header_wrapper .nav-item .nav-link.active,
-.header_wrapper .nav-item .nav-link:hover{
+.header_scrolled .nav-item .nav-link.active,
+.header_scrolled .nav-item .nav-link:hover{
     color:var(--primary-color);
 }
 
@@ -210,10 +210,87 @@ button{
 .banner_wrapper{
     width:100%;
     height: auto;
-    min-height: 650px;
+    min-height: 1000px;
     background-image:url(../images/Vaporwave.jpg);
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     padding: 200px 0 100px 0;
+}
+
+/* 4 About */
+.about_wrapper ul.nav-pills{
+    border:1px solid var(--gray-color);
+    border-radius: 50px;
+}
+.about_wrapper ul li .nav-link{
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.45s cubic bezier(0,0,0.2,1);
+    display:inline-block;
+    color:var(--text-gray);
+    border: 0;
+}
+.about_wrapper ul li .nav-link.active{
+    background-color: var(--primary-color);
+}
+.about_wrapper .single-progress{
+    margin-top: 26px;
+    position: relative;
+    overflow: hidden;
+}
+.about_wrapper .single-progress .progress{
+    height: 4px;
+    border-radius: 4px;
+    box-shadow: none;
+    background-color: var(--bg-white);
+    overflow:visible;
+}
+.about_wrapper .single-progress .progress-bar{
+    background-image: var(--gradient-color);
+}
+.about_wrapper .single-progress h6{
+    text-align: left;
+}
+.about_wrapper .single-progress .label{
+    position:absolute;
+    right:0;
+    top:0;
+    color: var(--text-gray);
+    font-size: 15px;
+}
+.about_wrapper .tab-pane li{
+    color:var(--gray-color);
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight:300;
+    list-style: none;
+}
+.about_wrapper .tab-pane li a{
+    font-weight: 500;
+    display: block;
+    color:var(--text-gray);
+}
+/* 5 Services */
+
+/* 6 Portfolio */
+.portfolio_wrapper .card{
+    height:100%;
+    min-height: 350px;
+    overflow: hidden;
+    border: 1px solid var (--bg-white);
+    cursor:pointer;
+    box-shadow: 0 0 16px 4px var(--bg-dark-blue);
+}
+.portfolio_wrapper .card span{
+    transition: background-position 3s ease-in-out 0s;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-size: cover;
+}
+.portfolio_wrapper .card:hover span{
+    background-position: bottom center;
 }
