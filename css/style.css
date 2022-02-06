@@ -273,8 +273,10 @@ button{
     display: block;
     color:var(--text-gray);
 }
-/* 5 Services */
-
+/* 5 Education */
+.education_wrapper h5{
+    color: #FD4766;
+}
 /* 6 Portfolio */
 .portfolio_wrapper .card{
     height:100%;
